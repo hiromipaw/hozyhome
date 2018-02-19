@@ -1,0 +1,47 @@
+h2 span{
+	border-top: solid 1px #fa6b6a;
+	border-bottom: solid 1px #fa6b6a;
+}
+a:hover, a:focus {
+	color: #fa6b6a;
+}
+.nav > li > a:focus, .nav > li > a:hover{
+	background-color: #fa6b6a;
+}
+.caption{
+	background: rgba(250,102,101,0.9);
+}
+.button {
+	background: #fa6665;
+}
+.button:hover, .button:focus, .button.focus, .button:active, .button.active {
+ background-color: #e85453;
+}
+.border-button:hover, .border-button:focus, .border-button:active {
+	background-color: #e85453;
+	border:solid 2px #e85453;
+}
+.features{
+	border:solid 1px #fa6665;
+}
+ol.type li a:hover {
+	background: #fa6b6a;
+}
+.portfolio-modal .modal-content p.item-intro {
+	color:#fa6665;
+}
+.carousel-control{
+	color: #fa6665;
+}
+.carousel-control:focus, .carousel-control:hover{
+	color: #fa6665;
+}
+#contact i.fa {
+	color: #fa6665;
+}
+.contact-wrapper{
+		border:solid 1px #fa6665;
+}
+.contact-form{
+	background-color: #fa6665;
+}
