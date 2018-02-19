@@ -1,0 +1,14 @@
+before_script:
+  - apt-get update -qq 
+  - curl -sf https://www.getlektor.com/install.sh | sh
+# the 'pages' job will deploy and build your site to the 'public' path
+pages:
+  stage: deploy
+  script:
+    - lektor build -O public
+  artifacts:
+    paths:
+      - public
+  only:
+    - master # this job will affect only the 'master' branch
+
