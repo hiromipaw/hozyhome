@@ -1,2 +1,4 @@
 [project]
 name = hozyhome
+[servers.ghpages]
+target = ghpages://hiromipaw/hozyhome
