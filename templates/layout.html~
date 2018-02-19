@@ -1,0 +1,88 @@
+<!doctype html>
+<meta charset="utf-8">
+<link rel="stylesheet" href="{{ '/static/css/bootstrap.min.css'|url }}">
+<link rel="stylesheet" href="{{ '/static/css/style.css'|url }}">
+<link rel="stylesheet" href="{{ '/static/css/colors/pink.css'|url }}">
+<link rel="stylesheet" href="{{ '/static/css/animate.css'|url }}">
+<link href="https://fonts.googleapis.com/css?family=Muli:400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="{{ '/static/fonts/font-awesome/css/font-awesome.css'|url }}">
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+    <script src="style/js/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+<title>{% block title %}Welcome{% endblock %} — hozyhome</title>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+  <div id="preloader">
+    <div id="status"> <img src="img/preloader.gif" height="64" width="64" alt=""/> </div>
+  </div>
+
+
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+  <div id="preloader">
+    <div id="status"> <img src="img/preloader.gif" height="64" width="64" alt=""/> </div>
+  </div>
+
+  <nav class="navbar navbar-expand-lg default  " id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="img/logo.png" alt=""/> </a>
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav ml-auto navbar-right">
+	  <li class="nav-item">
+	    <a class="nav-link js-scroll-trigger" href="#page-top">Home</a>
+            {% for href, title in [
+            ['/blog', 'Blog'],
+            ['/projects', 'Projects'],
+            ['/about', 'About']
+            ] %}
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="{{ href|url }}">{{ title }}</a></li>
+          {% endfor %}
+	</ul>
+      </div>
+    </div>
+  </nav>
+  <header>
+    <div id="intro">
+      <div class="intro-body">
+	<div class="container">
+          <div class="col-md-7 caption">
+            <h1 class="animated fadeInDown delay-07s">Creative Travel
+	      One page psd template</h1>
+            <p class="intro-text  animated fadeInUp delay-1s">Cras blandit urna et congue rhoncus. Aliquam id sapien sit amet diam bibendum imperdiet ac at odio. Vivamus et risus pulvinar, luctus ex eu, bibendum tortor. Donec sed dui eu metus auctor ultrices. Vestibulum at vulputate odio. Donec pulvinar nunc ac felis interdum</p>
+            <a href="#" class="border-button animated fadeInUp delay-1s">Learn More</a> </div>
+	</div>
+      </div>
+    </div>
+  </header>
+  {% block body %}{% endblock %}
+
+  <footer>
+    <div class="container">
+      <div class=" social-icon"> <a href="#"> <i class="fa fa-facebook "  aria-hidden="true"></i></a>
+	<a href="#"> <i class="fa fa-twitter "  aria-hidden="true"></i></a>
+	<a href="#"> <i class="fa fa-linkedin "  aria-hidden="true"></i></a>
+	<a href="#"> <i class="fa fa-google-plus "  aria-hidden="true"></i></a>
+	<a href="#"> <i class="fa fa-pintrest "  aria-hidden="true"></i></a>
+      </div>
+      <span><img src="img/logo.png" alt=""/></span>
+      <p class="copyrighttext">Copyright © 2017 <a href="#"> Wayfarer </a> All rights reserved.</p>
+    </div>
+  </footer>
+  <script type="text/javascript" src="{{ '/static/js/jquery.min.js'|url }}"></script>
+  <script type="text/javascript" src="{{ '/static/js/bootstrap.js'|url }}"></script>
+  <script type="text/javascript" src="{{ '/static/js/SmoothScroll.js'|url }}"></script>
+  <script type="text/javascript" src="{{ '/static/js/jquery.isotope.js'|url }}"></script>
+  <script type="text/javascript" src="{{ '/static/js/main.js'|url }}"></script>
+  <script type="text/javascript" src="{{ '/static/js/wow.js'|url }}"></script>
+</body>

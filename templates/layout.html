@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="zxx">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="{{ '/static/css/bootstrap.min.css'|asseturl }}">
+    <link rel="stylesheet" href="{{ '/static/css/style.css'|asseturl }}">
+    <link rel="stylesheet" href="{{ '/static/css/colors/pink.css'|asseturl }}">
+    <link rel="stylesheet" href="{{ '/static/css/animate.css'|asseturl }}">
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ '/static/fonts/font-awesome/css/font-awesome.css'|url }}">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+	<script src="style/js/html5shiv.js"></script>
+	<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+	<![endif]-->
+    <title>{% block title %}Welcome{% endblock %} — hozyhome</title>
+  </head>
+  <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    <div id="preloader">
+      <div id="status"> <img src="{{ '/static/img/preloader.gif'|asseturl }}" height="64" width="64" alt=""/> </div>
+    </div>
+    <nav class="navbar navbar-expand-lg default  " id="mainNav">
+      <div class="container">
+	<a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="{{ '/static/img/logo.png'|asseturl }}" alt=""/> </a>
+	<div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+	</div>
+	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav ml-auto navbar-right">
+	    <li class="nav-item">
+	      <a class="nav-link js-scroll-trigger" href="#page-top">Home</a>
+              {% for href, title in [
+	      ['#servizi', 'Servizi'],
+              ['/affitti', 'Affitti'],
+              ['/offerta', 'Offerta'],
+              ['/cav', 'CAV'],
+	      ['/blog', 'Blog']
+              ] %}
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="{{ href|url }}">{{ title }}</a></li>
+            {% endfor %}
+	  </ul>
+	</div>
+      </div>
+    </nav>
+    <header>
+      <div id="intro">
+	<div class="intro-body">
+	  <div class="container">
+            <div class="col-md-7 caption">
+              <h1 class="animated fadeInDown delay-07s">Mission</h1>
+              <p class="intro-text  animated fadeInUp delay-1s">HozyHome è dedicato ai proprietari di immobili che vogliono massimizzare le loro opportunità d’affitto a breve termine. Se non hai tempo da dedicare ai tuoi viaggiatori, HozyHome lo fa per te.
+Dalla selezione degli ospiti, all’accoglienza di essi, sino alle pulizie approfondite del tuo appartamento.</p>
+              <a href="#" class="border-button animated fadeInUp delay-1s">Contattaci oggi</a> </div>
+	  </div>
+	</div>
+      </div>
+    </header>
+    {% block body %}{% endblock %}
+
+
+    <script type="text/javascript" src="{{ '/static/js/jquery.min.js'|asseturl }}"></script>
+    <script type="text/javascript" src="{{ '/static/js/bootstrap.js'|asseturl }}"></script>
+    <script type="text/javascript" src="{{ '/static/js/SmoothScroll.js'|asseturl }}"></script>
+    <script type="text/javascript" src="{{ '/static/js/jquery.isotope.js'|asseturl }}"></script>
+    <script type="text/javascript" src="{{ '/static/js/main.js'|asseturl }}"></script>
+    <script type="text/javascript" src="{{ '/static/js/wow.js'|asseturl }}"></script>
+  </body>
+</html>

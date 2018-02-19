@@ -1,0 +1,59 @@
+{% extends "layout.html" %}
+{% block title %}{{ this.title }}{% endblock %}
+{% block body %}
+<section id="{{ this.title }}">
+  <div class="container">
+    <div class="section-title text-center center">
+      <h2><span> Our Journey </span></h2>
+    </div>
+    <div class="row">
+      <div class="col-md-8">
+    	<div class="row">
+	  <div class="col-sm-6 col-md-6 wow fadeInLeft delay-05s">
+      	    <div class="features">
+      	      <img src="img/travel_Insurance.png" alt=""/>
+      	      <h3>Travel Insurance</h3>
+      	      <p>Nullam in commodo urna, a scelerisque justo. Integer tellus libero, vestibulum non mauris.</p>
+      	    </div>
+	  </div>
+	  <div class="col-sm-6 col-md-6 wow fadeInRight delay-05s">
+      	    <div class="features">
+      	      <img  class="fadeInDown delay-05s animated" src="img/guidance.png" alt=""/>
+      	      <h3>Personal Guidance</h3>
+      	      <p>Nullam in commodo urna, a scelerisque justo. Integer tellus libero, vestibulum non mauris.</p>
+      	    </div>
+	  </div>
+
+	  <div class="col-sm-6 col-md-6 wow fadeInLeft delay-05s">
+      	    <div class="features">
+      	      <img src="img/security.png" alt=""/>
+      	      <h3>Safety</h3>
+      	      <p>Nullam in commodo urna, a scelerisque justo. Integer tellus libero, vestibulum non mauris.</p>
+      	    </div>
+	  </div>
+
+	  <div class="col-sm-6 col-md-6 wow fadeInRight delay-05s">
+      	    <div class="features">
+      	      <img  class="fadeInDown delay-05s animated" src="img/price-tag.png" alt=""/>
+      	      <h3>Reasonable Price </h3>
+      	      <p>Nullam in commodo urna, a scelerisque justo. Integer tellus libero, vestibulum non mauris.</p>
+      	    </div>
+	  </div>
+
+
+	</div>
+      </div>
+      <div class="col-md-4  f-img">
+      	<span class="boldtext"> Nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </span>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+
+	sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+
+	<p>sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquipea
+	</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+{{ this.body }}
+{% endblock %}
